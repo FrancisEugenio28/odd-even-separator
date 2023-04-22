@@ -10,15 +10,17 @@
 even = []
 odd = []
 # read input file
-with open("numbers.txt", "r") as input_file:
+with open("numbers.txt", "r") as input_file, open("even.txt", "a") as even_file, open("odd.txt", "a") as odd_file: 
     # for each line
     for line in (input_file):
         # remove all the \n 
         input_line = line.strip()
         # separate the even from the list
         if (int(line) % 2 == 0):
-            even.append(line)
+            even.append(input_line)
         # else, store the odd from the list
         else:
-            odd.append(line)
-# write it in the txt file
+            odd.append(input_line)
+    # write it in the txt file
+    even_file.write(even)
+    odd_file.write(odd)
