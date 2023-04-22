@@ -14,7 +14,7 @@ with open("numbers.txt", "r") as input_file:
     # for each line
     for line in (input_file):
         # separate the even from the list
-        if (line % 2 == 0):
+        if (int(line) % 2 == 0):
             even.append(line)
 # else, store the odd from the list
 # write it in the txt file
