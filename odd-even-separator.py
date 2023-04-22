@@ -13,6 +13,8 @@ odd = []
 with open("numbers.txt", "r") as input_file:
     # for each line
     for line in (input_file):
+        # remove all the \n 
+        input_line = line.strip()
         # separate the even from the list
         if (int(line) % 2 == 0):
             even.append(line)
