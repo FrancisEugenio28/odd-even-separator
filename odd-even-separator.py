@@ -7,6 +7,7 @@
 #The second text file will be named odd.txt that will contains all odd numbers extracted from the numbers.txt.
 
 # read input file
+with open("numbers.txt", "r") as input_file:
 # for each line
 # separate the even from the list
 # else, store the odd from the list
