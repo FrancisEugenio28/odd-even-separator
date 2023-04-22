@@ -8,7 +8,8 @@
 
 # read input file
 with open("numbers.txt", "r") as input_file:
-# for each line
+    # for each line
+    for i in (input_file):
 # separate the even from the list
 # else, store the odd from the list
 # write it in the txt file
