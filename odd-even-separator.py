@@ -10,7 +10,7 @@
 even = []
 odd = []
 # read input file
-with open("numbers.txt", "r") as input_file, open("even.txt", "a") as even_file, open("odd.txt", "a") as odd_file: 
+with open("numbers.txt", "r") as input_file, open("even.txt", "w") as even_file, open("odd.txt", "w") as odd_file: 
     # for each line
     for line in (input_file):
         # remove all the \n 
