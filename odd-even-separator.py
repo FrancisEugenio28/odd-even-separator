@@ -12,9 +12,9 @@ odd = []
 # read input file
 with open("numbers.txt", "r") as input_file:
     # for each line
-    for i in (input_file):
+    for line in (input_file):
         # separate the even from the list
-        if (i % 2 == 0):
-            even.append(i)
+        if (line % 2 == 0):
+            even.append(line)
 # else, store the odd from the list
 # write it in the txt file
