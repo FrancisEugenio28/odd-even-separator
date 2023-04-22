@@ -22,5 +22,5 @@ with open("numbers.txt", "r") as input_file, open("even.txt", "a") as even_file,
         else:
             odd.append(input_line)
     # write it in the txt file
-    even_file.write(even)
-    odd_file.write(odd)
+    even_file.write(','.join(even))
+    odd_file.write(','.join(odd))
